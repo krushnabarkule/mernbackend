@@ -1,7 +1,7 @@
 const mongoose = require("mongoose")
 
 //to connect or create our database
-mongoose.connect("mongodb://localhost:27017/LoginDetails",{
+mongoose.connect(process.env.DATABASE,{
     useCreateIndex : true,
     useUnifiedTopology : true,
     useNewUrlParser : true ,
