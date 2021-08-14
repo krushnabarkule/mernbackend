@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Dosis&display=swap');
+*{
+    font-family: 'Arvo', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+:root{
+    --main-bg: #1e272e;
+    --main-color : #0097e6;
+}
+
+/* Nvabar */
+
+.main-menu{
+    background-color: var(--main-bg);
+}
+
+.navbar-brand{
+    font-size: 25px;
+    color: #fff;
+}
+.navbar li{
+    margin-left: 2rem;
+}
+.nav-link{
+    color: #fff;
+    font-size: 14px;
+}
+#home{
+    /* margin-left: 300px; */
+    margin-left: 30rem;
+}
+.navbar a:hover{
+    color: var(--main-color);
+}
+.navbar-toggler-icon{
+    color: white;
+    background: gray;
+}
+.fa-snowflake{
+    color: #fff;
+    font-size: 25px;
+    transition: all linear;
+    animation: rot 2s linear infinite;
+}
+@keyframes rot {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* Home */
+
+.main-header-left{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main-header-left p{
+    font-size: 3rem;
+}
+.main-header-left .text{
+    color: var(--main-color);
+    font-weight: bold;
+}
+.main-header-left button{
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.4rem;
+    border-radius: 1.5rem;
+    text-transform: capitalize;
+    box-shadow: 0 10px 6px -6px #000;
+    outline: none;
+}
+.main-header-left button:hover{
+    box-shadow: 0 10px 6px -6px var(--main-color);
+}
+.main-header-left h1{
+    font-size: 3rem;
+    margin: 1rem 0 3rem 0;
+    text-transform: capitalize;
+}
+.main-header-right{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main-header-right .carousel-item {
+    width: 100%;
+    height: 100%;
+}
+.main-header-right .carousel-item img{
+    border: 2px solid #fff;
+    border-radius: 25px;
+}
+
+/* Registeration */
+
+.register-header{
+    background-image: linear-gradient(to right , rgb(61, 61, 192),rgb(92, 199, 218));
+    color: black;
+    margin-top: 3rem;
+    height: 80vh;
+}
+.register-left{
+    padding: 30px;
+    margin: 57px;
+    text-align: center;
+    color: #fff;
+}
+.register-left i{
+    margin-bottom: 12px;
+}
+.register-left h1{
+    margin-bottom: 12px;
+}
+.register-left button{
+    margin-top: 100px;
+}
+.register-left .btn1{
+    cursor: pointer;
+    outline: none;
+    padding: 4px 27px;
+    border: none;
+    border-radius: 16px;
+    font-size: 10px;
+    color: #000;
+    background: #fff;
+    box-shadow: 0 10px 6px -6px #000;
+}
+.register-left .btn1:hover{
+    color: #fff;
+    background-color: black;
+}
+.register-right{
+    padding: 30px;
+    margin: 44px 10px;
+    background: white;
+    width: 65%;
+    height: 65%;
+    border-top-left-radius: 75px;
+    border-bottom-left-radius: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register-right h2{
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 300;
+    font-size: 28px;
+}
+.register-right .btn2 ,.btn3 ,.btn5{
+    cursor: pointer;
+    outline: none;
+    padding: 4px 14px;
+    border: none;
+    border-radius: 16px;
+    font-size: 10px;
+    color: #fff;
+    background: blue;
+    box-shadow: 0 10px 6px -6px #000;
+}
+.register-right .btn2:hover ,.btn3:hover{
+    color: blue;
+    background: #fff;
+}
+.register-right .btn4{
+    cursor: pointer;
+    outline: none;
+    padding: 4px 12px;
+    border: none;
+    border-radius: 16px;
+    font-size: 10px;
+    color: #fff;
+    background-color: blue;
+    position: relative;
+    bottom: -15px;
+    left: 100px;
+    width: 100px;
+    height: 30px;
+    box-shadow: 0 10px 6px -6px #000;
+}
+.register-right .btn4:hover{
+    color: #fff;
+    background-color: black;
+}
+.form-check{
+    margin-left: 10px;
+}
+
+/* Login */
+
+.container1 {
+    width: 96%;
+    height: 450px;
+    margin: 20px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container1 .login-header{
+    width: 300px;
+    height: 300px;
+    background: rgb(233, 231, 231);
+    padding: 30px;
+    margin: 10px;
+    outline: none;
+    
+}
+.container1 .btn{
+    cursor: pointer;
+    outline: none;
+    width: 100%;
+    padding: 6px 27px;
+    border: none;
+    font-size: 10px;
+    box-shadow: 0 10px 6px -6px #000;
+}
+
+.login-header .btn5:hover{
+    color: #fff;
+    background: #000;
+}
+.new-account{
+    font-size: 14px;
+    text-decoration: none;
+}
+.img-fluid{
+    width: 50px;
+    height: 50px;
+}
+.profile{
+    border-radius: 50%;
+}
+
+/* Tutorials */
+.card-title{
+    font-size: 25px;
+    font-weight: bold;
+}
+.card-text{
+    font-size: 11px;
+}
+.card-text ul li{
+    list-style: none;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    background-color: var(--main-bg);
+    margin-top: auto;
+}
+footer p{
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    line-height: 3rem;
+    font-size: 1.5rem;
+}
+
+/* responsive code */
+@media (max-width:768px){
+    #home{
+        /* margin-left: 0px; */
+        margin-left: 0px;
+    }
+    .main-header-left{
+        height: auto;
+        margin: 5rem 0;
+    }
+    .main-header-right{
+        height: auto;
+        margin-top: 3rem;
+    }
+    .card{
+        margin-top: 4rem;
+    }
+    .container1{
+        width: 88%;
+    }
+    .container1 .login-header{
+        width: 100%;
+        height: 100%;
+    }
+    .register-header{
+        height: 100%;
+    }
+    .register-left{
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        color: #fff;
+    }
+    .register-left i{
+        margin-bottom: 0px;
+    }
+    .register-left h1{
+        margin-bottom: 0px;
+    }
+    .register-left button{
+        margin-top: 0px;
+    }
+    .register-right{
+        width: 85%;
+        height: 85%;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    
+}

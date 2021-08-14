@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    {{>link}}
+
+    <title>MERN BackEnd</title>
+</head>
+
+<body>
+    {{>navbar}}
+
+    <div class="container1">
+        <div class="row">
+            <form class="text-center" action="/login" method="POST">
+                <div class="col-md-12 mx-auto login-header">
+                    <img src="images/profile.jpg" alt="" class="img-fluid profile mb-4">
+                    <input type="email" class="form-control mb-4" placeholder="Email *" name="email" required>
+                    <input type="password" class="form-control mb-4" placeholder="Password *" name="password" required>
+                    <button type="submit" class="btn btn-primary text-center btn-block mb-4">Sign in</button>
+                    <label for="" class="checkbox pull-left mt-3 ">
+                        <input type="checkbox" value="remember-me">
+                        Remember me
+                    </label>
+                    <a href="#" class="pull-right need-help">Need Help?</a><span class="clearfix"></span>
+                </div>
+                <a href="/register" class="text-center new-account"> Create an account </a>
+            </form>
+        </div>
+    </div>
+
+    {{>footer}}
+
+
+</body>
+
+</html>

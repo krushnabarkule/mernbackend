@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {{>link}}
+  <title>MERN BackEnd</title>
+</head>
+
+<body>
+  {{>navbar}}
+
+  <div class="container-fluid main-header">
+    <div class="row">
+      <div class="col-md-10 col-12 mx-auto">
+        <div class="row">
+          <!-- left side div -->
+          <div class="col-md-6 col-12 mx-auto main-header-left">
+            <h1>Get the latest about <span class="text">MERN</span> and Welcome to <span class="text">MERN</span> BackEnd </h1>
+            <div class="d-flex">
+              <a href="/register"><button>Register Now</button></a>
+              <a href="/login"><button>Login</button></a>
+            </div>
+          </div>
+          <!-- right side div -->
+          <div class="col-md-6 col-12 mx-auto main-header-right">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                  aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                  aria-label="Slide 5"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/bg1.jfif" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/bg2.jfif" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/bg3.jfif" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/bg4.jfif" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/bg5.jfif" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+  {{>footer}}
+
+
+</body>
+
+</html>
